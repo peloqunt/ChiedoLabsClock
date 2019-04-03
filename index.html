@@ -12,11 +12,18 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-
-      ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('root')
-      );
+      function clockDisplay() {
+        const clock = (
+          <div>
+            <h1>Hello, world!</h1>
+            <h2>The time is {new Date().toLocaleTimeString("en-US", {timeZone: "America/Los_Angeles"})} in California.</h2>
+            <h2>The time is {new Date().toLocaleTimeString("en-US", {timeZone: "America/Denver"})} in Colorado.</h2>
+            <h2>The time is {new Date().toLocaleTimeString("en-US", {timeZone: "America/New_York"})} in New York.</h2>
+          </div>
+        );
+        ReactDOM.render(clock, document.getElementById('root'));
+      }
+      setInterval(clockDisplay, 1000);
 
     </script>
   </body>
