@@ -1,0 +1,25 @@
+{
+  "name": "ChiedoLabsClock",
+  "version": "0.1.0",
+  "description": "Clock application using Express 4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peloqunt/ChiedoLabsClock"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ];
+  "author": "Noah Peloquin",
+}
