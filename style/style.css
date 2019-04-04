@@ -1,0 +1,13 @@
+body {
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+#root {
+  font-family: sans-serif;
+  color: grey;
+  font-size: 18px;
+}
