@@ -20,6 +20,6 @@
     "node",
     "heroku",
     "express"
-  ];
+  ],
   "author": "Noah Peloquin",
 }
