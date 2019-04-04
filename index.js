@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'))
 
 // Maybe we have to have them seperately and got rid of path.
 app.get('/', function(request, response) {
-  response.sendFile(__dirname + 'index.html')
+  response.sendFile(__dirname + '/index.html')
 })
 
 app.get('/', function(request, response) {
