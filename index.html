@@ -3,17 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hello Chiedo Labs</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
   </head>
   <body>
+    <h1>Hello, world!</h1>
     <div id="root"></div>
     <script type="text/babel">
       function clockDisplay() {
         const clock = (
           <div>
-            <h1>Hello, world!</h1>
             <h2>The time is {new Date().toLocaleTimeString("en-US", {timeZone: "America/Los_Angeles"})} in California.</h2>
             <h2>The time is {new Date().toLocaleTimeString("en-US", {timeZone: "America/Denver"})} in Colorado.</h2>
             <h2>The time is {new Date().toLocaleTimeString("en-US", {timeZone: "America/New_York"})} in New York.</h2>
