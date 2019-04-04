@@ -4,8 +4,12 @@ var app = express()
 app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
+// Maybe we have to have them seperately and got rid of path.
 app.get('/', function(request, response) {
-  response.sendFile(path.join(__dirname + 'index.html'))
+  response.sendFile(__dirname + 'index.html')
+})
+
+app.get('/', function(request, response) {
   response.send('Hello World!')
 })
 
